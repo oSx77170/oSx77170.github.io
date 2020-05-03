@@ -1,0 +1,337 @@
+html, body, #site {
+    margin: 0;
+    min-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-bar a.active{
+    color: #d63031;
+    text-decoration: underline;
+}
+
+
+/* a:hover {
+    text-decoration: underline;
+    color: #d63031;
+} */
+
+body {
+    background-image: url("./images/fond_jaune.png");
+}
+#site {
+    margin: auto;
+    width: 1200px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 20px;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo .logo-brand {
+    display: flex;
+    align-items: flex-end;
+
+    padding: 5px;
+}
+
+header .logo .logo-img {
+    width: 60px;
+    height: 60px;
+
+    background-image: url("./images/zozor_logo.png");
+    background-repeat: no-repeat;
+}
+
+header .logo .logo-name {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+header .logo .logo-desc {
+    align-self: flex-start;
+
+    font-weight: bold;
+
+    padding-left: 6px;
+}
+
+header .nav-bar {
+    display: flex;
+    align-items: flex-end;
+
+    padding: 10px;
+}
+
+header .nav-bar .nav-item {
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.banner {
+    padding: 5px 20px;
+}
+
+.banner .ban-img {
+    max-width: 2090px;
+    height: 220px;
+    position: relative;
+    border-radius: 10px;
+    background-image: url("./images/sanfrancisco.jpg");
+    background-size: cover;
+    
+    box-shadow: 0 4px 2px #000000;
+}
+
+.banner .ban-text {
+    color: #ffffff;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: 10px 0px;
+
+    background-color: rgba(0, 0, 0, 0.5);    
+    border-radius: 10px;
+}
+
+.ban-text .ban-desc {
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+.ban-text .ban-button {
+    color: #ffffff;
+
+    background-image: url("./images/fond_degraderouge.png");
+    background-repeat: repeat-x;
+
+    border-radius: 6px;
+
+    margin-right: 15px;
+    padding: 5px 30px 5px 10px;
+}
+
+.ban-img .ban-arrow {
+    position: absolute;
+    bottom: 18px;
+    right: 25px;
+    width: 7px;
+    height: 11px;
+    background-image: url("./images/flecheblanchedroite.png");
+}
+
+.middle {
+    display: flex;
+
+    padding: 20px;
+}
+
+.middle article {
+    padding-right: 20px;
+
+    text-align: justify;
+    
+}
+.middle article .article-title {
+    display: flex;
+    
+    padding-top: 10px;
+
+}
+
+.middle article .article-ico {
+    align-self: center;
+
+    padding-right:  10px;
+
+    width: 43px;
+    height: 47px;
+    background-image: url("./images/ico_epingle.png");
+    background-repeat: no-repeat;
+
+}
+
+.middle .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 420px;
+    margin-left: 20px;
+    background-color: #706b64;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 20px;
+
+    text-align: justify;
+}
+
+.middle .about .about-fleche {
+    position: absolute;
+    left: -11px;
+    top: 110px;
+    width: 12px;
+    height: 17px;
+    background-image: url("./images/bulle.png");
+}
+
+.middle .about .about-img {
+    width: 139px;
+    height: 116px;
+
+    background-image: url("./images/zozor_classe.png");
+    border: 1px solid #000000;
+}
+
+.middle .about .about-ico {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.middle .about-ico .ico-fb {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images/facebook.png");
+}
+
+.middle .about-ico .ico-twt {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images/twitter.png");
+}
+
+.middle .about-ico .ico-vim {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images/vimeo.png");
+}
+
+.middle .about-ico .ico-fck {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images/flickr.png");
+}
+
+.middle .about-ico .ico-rss {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-image: url("./images/rss.png");
+}
+
+.separation {
+    display: flex;
+    padding: 0 20px;
+}
+
+.separation .sep-1 {
+    flex-grow: 3;
+    width: 107px;
+    height: 10px;
+    background-image: url("./images/separateur.png");
+    background-repeat: repeat-x;    
+}
+
+.separation .sep-2 {
+    width: 54px;
+    height: 30px;
+    background-image: url("./images/ico_top.png");
+    background-repeat: no-repeat;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+footer .mypic {
+    display: flex;
+    padding: 10px 0;
+    
+}
+
+footer .pic-1 {
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-image: url("./images/photo1.jpg");
+    margin: 0 5px 0 0;
+    border: 1px solid #000000;
+}
+
+footer .pic-2 {
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-image: url("./images/photo2.jpg");
+    margin: 0 5px 0 0;
+    border: 1px solid #000000;   
+
+}
+
+footer .pic-3 {
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-image: url("./images/photo3.jpg");
+    margin: 0 5px 0 0;
+    border: 1px solid #000000;
+}
+
+footer .pic-4 {
+    width: 69px;
+    height: 69px;
+    background-repeat: no-repeat;
+    background-image: url("./images/photo4.jpg");
+    margin: 0 5px 0 0;
+    border: 1px solid #000000;
+}
+
+footer .friend-list {
+    display: flex;
+}
+
+footer .friends ul {
+    padding: 10px 30px 10px 0;
+    margin-top: 0;
+}
+
+footer .friends li {
+    color: #d63031;
+    list-style: url("./images/ico_liensexterne.png");
+}
