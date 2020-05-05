@@ -1,0 +1,16 @@
+html, body, .page{
+    height: 100%;
+    width: 100%;
+}
+
+.page{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pad{
+    margin: 20px;
+}
