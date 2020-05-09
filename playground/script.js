@@ -1,22 +1,39 @@
-let greenButton = document.querySelector('.button1');
-let blueButton = document.querySelector('.button2');
-let redButton = document.querySelector('.button3');
-let yellowButton = document.querySelector('.button4');
+const buttons = document.querySelectorAll('.button');
+const slides = ["./nature1.jpg", "./nature2.jpg", "./nature3.jpg"];
+let numbSlide = 0;
 
 
+//Affiche l'image
+const showSlide = (num) => {
+    document.querySelector('.slider-image').style.backgroundImage = `url(${slides[num]})`; 
+}
 
-greenButton.addEventListener('click', function(){
-    document.body.style.backgroundColor = 'green';
-})
+//Test de la position
+const changeSlide = (selectedSlide) => {
+    if(selectedSlide < 0) {
+        selectedSlide = slides.length-1;
+    }
+    else if(selectedSlide >= slides.length) {
+        selectedSlide = 0;    
+    }
+    showSlide(selectedSlide);        
+}
 
-blueButton.addEventListener('click', function(){
-    document.body.style.backgroundColor = 'blue';
-})
+const testSlide = function(ev) {    
+    const button = ev.target;
 
-redButton.addEventListener('click', function(){
-    document.body.style.backgroundColor = 'red';
-})
+    if(button.classList.contains('prevSlide')) {
+        numbSlide --;
+        changeSlide(numbSlide);
+    }
+    else if(button.classList.contains('nextSlide')) {
+        numbSlide ++;
+        changeSlide(numbSlide);
+    }
+}
 
-yellowButton.addEventListener('click', function(){
-    document.body.style.backgroundColor = 'yellow';
+// Ecoute du bouton sur lequel l'utilisateur a appuyé
+buttons.forEach((button) => {
+    
+    button.addEventListener('click', testSlide);
 })

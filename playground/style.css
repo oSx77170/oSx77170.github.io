@@ -1,16 +1,74 @@
-html, body, .page{
+html, body, .main {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
-.page{
-    margin: auto;
+.main {
+    
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
 }
 
-.pad{
-    margin: 20px;
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 80px;
+}
+
+.slides .sliderTitle {
+    font-size: 40px;
+}
+
+.slider-image {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    background-image: url('./nature1.jpg');
+    background-repeat: no-repeat;
+}
+
+.slider .prevSlide {
+    cursor: pointer;
+    color: aliceblue;
+    padding: 10px;
+    background-color: #000;
+    opacity: 0.5;
+    font-size: 100px;
+    position: absolute;
+    top: 325px;
+    transition: 0.1s ease-in-out;
+}
+
+.slider .prevSlide:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    margin-left: 8px;
+}
+
+
+.slider .nextSlide {
+    cursor: pointer;
+    color: aliceblue;
+    padding: 10px;
+    background-color: #000;
+    opacity: 0.5;
+    font-size: 100px;
+    position: absolute;
+    top: 325px;
+    right: 0;
+    transition: 0.1s ease-in-out;
+}
+
+.slider .nextSlide:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    margin-right: 8px;
 }
